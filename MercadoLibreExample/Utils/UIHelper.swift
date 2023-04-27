@@ -14,6 +14,7 @@ class UIHelper {
         if let url = url {
             URLSession.shared.dataTask(with: url) { data, _, error in
                 guard let data = data, error == nil else {
+                    imageView.image = UIImage(named: "no-image")
                     return
                 }
                 
