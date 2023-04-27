@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SearchTextViewCell" rowHeight="46" id="sd9-xz-g97" customClass="SearchTextViewCell" customModule="MercadoLibreExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sd9-xz-g97" id="bYI-hg-Swr">
+                <rect key="frame" x="0.0" y="0.0" width="438" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ete-aj-u9b">
+                        <rect key="frame" x="0.0" y="0.0" width="438" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTJ-NW-TaI">
+                                <rect key="frame" x="12" y="8" width="414" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cTJ-NW-TaI" firstAttribute="leading" secondItem="Ete-aj-u9b" secondAttribute="leading" constant="12" id="Lnj-a7-dRP"/>
+                            <constraint firstAttribute="trailing" secondItem="cTJ-NW-TaI" secondAttribute="trailing" constant="12" id="bsl-Wz-ES5"/>
+                            <constraint firstAttribute="bottom" secondItem="cTJ-NW-TaI" secondAttribute="bottom" constant="8" id="hKI-yZ-wdA"/>
+                            <constraint firstItem="cTJ-NW-TaI" firstAttribute="top" secondItem="Ete-aj-u9b" secondAttribute="top" constant="8" id="s4I-da-eiZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Ete-aj-u9b" secondAttribute="trailing" id="4Kw-im-S0Y"/>
+                    <constraint firstItem="Ete-aj-u9b" firstAttribute="top" secondItem="bYI-hg-Swr" secondAttribute="top" id="RRk-0x-eDO"/>
+                    <constraint firstItem="Ete-aj-u9b" firstAttribute="leading" secondItem="bYI-hg-Swr" secondAttribute="leading" id="SDu-IX-z9g"/>
+                    <constraint firstAttribute="bottom" secondItem="Ete-aj-u9b" secondAttribute="bottom" id="edO-qR-5Dz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="searchLabel" destination="cTJ-NW-TaI" id="JUt-Fc-Ver"/>
+            </connections>
+            <point key="canvasLocation" x="-122.13740458015266" y="62.676056338028175"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
