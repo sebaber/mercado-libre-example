@@ -21,7 +21,7 @@ class UIHelper {
                     if let image = UIImage(data: data) {
                         imageView.image = image
                     } else {
-                        
+                        imageView.image = UIImage(named: "no-image")
                     }
                 }
             }.resume()
