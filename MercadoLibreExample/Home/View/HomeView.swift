@@ -74,6 +74,7 @@ extension HomeView: UISearchBarDelegate {
     
     func reloadCategoryData(){
         self.collectionView.reloadData()
+        self.showCategories()
     }
     
 }
