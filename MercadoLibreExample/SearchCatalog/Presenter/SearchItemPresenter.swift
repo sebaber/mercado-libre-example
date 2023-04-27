@@ -55,7 +55,7 @@ class SearchItemPresenter: SearchItemPresenterProtocol {
     
     func onSearchItemError(error: Error) {
         LoadingView.shared.stopAnimating()
-        ErrorView.shared.showError(message: "A ocurrido un Error", buttonTitle: "Reintentar") {
+        ErrorView.shared.showError(message: "A ocurrido un error", buttonTitle: "Reintentar") {
             ErrorView.shared.hideError()
             self.onViewDidLoad()
         }

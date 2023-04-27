@@ -28,7 +28,6 @@
 		A018B76029F6DF7100389E8D /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A018B75329F6DF7100389E8D /* HomeModule.swift */; };
 		A018B76129F6DF7100389E8D /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A018B75529F6DF7100389E8D /* HomeInteractor.swift */; };
 		A018B76229F6DF7100389E8D /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A018B75629F6DF7100389E8D /* HomeProtocols.swift */; };
-		A018B76329F6DF7100389E8D /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A018B75829F6DF7100389E8D /* HomeCell.swift */; };
 		A018B76429F6DF7100389E8D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A018B75A29F6DF7100389E8D /* HomeRouter.swift */; };
 		A01F552D29F83FE1007E332C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F552C29F83FE1007E332C /* LoadingView.swift */; };
 		A01F552F29F84AE6007E332C /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F552E29F84AE6007E332C /* ErrorView.swift */; };
@@ -85,7 +84,6 @@
 		A018B75329F6DF7100389E8D /* HomeModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
 		A018B75529F6DF7100389E8D /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		A018B75629F6DF7100389E8D /* HomeProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
-		A018B75829F6DF7100389E8D /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		A018B75A29F6DF7100389E8D /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		A01F552C29F83FE1007E332C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A01F552E29F84AE6007E332C /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
@@ -306,7 +304,6 @@
 		A018B75729F6DF7100389E8D /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				A018B75829F6DF7100389E8D /* HomeCell.swift */,
 				A098F36729F966F4004F1856 /* CategoriesResult.swift */,
 			);
 			path = Entities;
@@ -550,7 +547,6 @@
 				A0BC3AE229F7081F00C6C264 /* NetworkManager.swift in Sources */,
 				A098F38029F9C3FE004F1856 /* ItemDetailProductTableViewCell.swift in Sources */,
 				A018B76229F6DF7100389E8D /* HomeProtocols.swift in Sources */,
-				A018B76329F6DF7100389E8D /* HomeCell.swift in Sources */,
 				A018B73929F5E52100389E8D /* SearchItemRouter.swift in Sources */,
 				A098F36829F966F4004F1856 /* CategoriesResult.swift in Sources */,
 				A098F37029F9BDA2004F1856 /* ItemDetailViewController.swift in Sources */,

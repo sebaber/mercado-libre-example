@@ -9,6 +9,8 @@ import UIKit
 
 class SearchTextViewCell: UITableViewCell {
     
+    static let identifier = "SearchTextViewCell"
+    
     @IBOutlet weak var searchLabel: UILabel!
     
     override func awakeFromNib() {

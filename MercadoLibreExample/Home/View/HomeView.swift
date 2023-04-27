@@ -34,7 +34,7 @@ class HomeView: UIViewController, HomeViewProtocol {
         self.tableView.isHidden = true
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        self.tableView.register(UINib(nibName: "SearchTextViewCell", bundle: nil), forCellReuseIdentifier: "SearchTextViewCell")
+        self.tableView.register(UINib(nibName: SearchTextViewCell.identifier, bundle: nil), forCellReuseIdentifier: SearchTextViewCell.identifier)
     }
     
     func initializeCategoryCollectionView(){
@@ -43,17 +43,24 @@ class HomeView: UIViewController, HomeViewProtocol {
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
     }
+    
+    func showCategories() {
+        tableView.isHidden = true
+        collectionView.isHidden = false
+    }
+    
+    func showSearch() {
+        tableView.isHidden = false
+        collectionView.isHidden = true
+    }
 }
 
 extension HomeView: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        tableView.isHidden = true
-        collectionView.isHidden = false
+        self.showCategories()
     }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        self.tableView.isHidden = true
-        self.collectionView.isHidden = false
         if let text = searchBar.text {
             self.presenter?.saveTextSearched(text: text)
             self.tableView?.reloadData()
@@ -62,8 +69,7 @@ extension HomeView: UISearchBarDelegate {
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        tableView.isHidden = false
-        collectionView.isHidden = true
+        self.showSearch()
     }
     
     func reloadCategoryData(){
